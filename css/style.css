@@ -837,8 +837,11 @@ div#preloader {
 
 .single-team-member {
   border: 1px solid #ddd;
+  margin-bottom: 35px;
 }
-
+.single-blog{
+  margin-bottom: 35px;
+}
 .team-left-text h4 {
   color: #fff;
   font-size: 30px;
@@ -1142,7 +1145,7 @@ div#preloader {
 }
 
 .awesome-img>a::after {
-  background: rgba(0, 0, 0, 0.7) none repeat scroll 0 0;
+  background: rgba(0, 0, 0, 0.3) none repeat scroll 0 0;
   content: "";
   height: 100%;
   left: 0;
