@@ -2360,6 +2360,28 @@ span.email-notes {
   opacity: 0.7; 
   margin-top: -2px;
 }
+.quick {
+  height: 100%;
+}
+.quick ul {
+  display: flex; flex-wrap: wrap;gap: 10px;
+}
+.quick ul li{
+  padding: 10px; border-radius: 20px; border: 1px solid #444;
+}
+.quick ul li a{
+  color: #444;
+}
+.quick ul li:hover{
+  border: 1px ;
+  color: #fff;
+  background: #3EC1D5;
+  transition-duration: 1.5s;
+}
+.quick ul li:hover a{
+  color: #fff;
+  transition-duration: .1s;
+}
 /*----------------------------------------
  .End CSS
 ----------------------------------------*/
