@@ -2329,11 +2329,11 @@ div#preloader {
   width: 100%;
 }
 
-.single-team-member:hover .team-img a:after {
+.hovereff:hover .team-img a:after {
   opacity: 1;
 }
 
-.single-team-member:hover .team-social-icon {
+.hovereff:hover .team-social-icon {
   top: 45%;
   opacity: 1;
 }
@@ -4573,6 +4573,7 @@ span.email-notes {
         <div class="flex-member">
           <div class="col-md-3 col-sm-3 col-xs-12">
             <div class="single-team-member">
+              <div class="hovereff">
               <div class="team-img">
                 <a>
                   <img src="img/portfolio/1.jpg" alt="">
@@ -4615,9 +4616,12 @@ span.email-notes {
                   </ul>
                 </div>
               </div>
+            </div>
               <div class="team-content text-center">
                 <h4>product 1</h4>
-                <p><a href="products.html">View All</a></p>
+                <p><a href="products.html">View All</a>
+                
+                <span style="margin-left: 15px;"><button onclick="showShare()" style="border: 1px;"> A</button></span></p>
               </div>
             </div>
           </div>
@@ -5676,6 +5680,20 @@ http://www.gnu.org/licenses/gpl.html
     window.addEventListener('scroll', startCounters, {
       once: true
     });
+  </script>
+  <script>
+    function showShare(){
+    var teamImgAnchor = document.querySelector('.team-img > a').querySelector('::after');
+console.log("share");
+    if (teamImgAnchor) {
+        //teamImgAnchorafter.style.position = 'relative'; // Ensure the anchor's position is set to relative
+        teamImgAnchor.style.opacity = '1'; // Set opacity to 1 to make the element visible
+
+       
+
+    }
+
+    }
   </script>
 </body>
 
