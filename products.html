@@ -2329,11 +2329,11 @@ div#preloader {
   width: 100%;
 }
 
-.single-team-member:hover .team-img a:after {
+.hovereff:hover .team-img a:after {
   opacity: 1;
 }
 
-.single-team-member:hover .team-social-icon {
+.hovereff:hover .team-social-icon {
   top: 45%;
   opacity: 1;
 }
@@ -4138,6 +4138,9 @@ span.email-notes {
       justify-content: center;
       flex-wrap: wrap;
     }
+    .team-content div{
+      margin-top: 13px;
+    }
    </style>
 </head>
 
@@ -4233,6 +4236,7 @@ span.email-notes {
 </div>
 <!-- banner end-->
    
+ 
   <!-- Start team Area -->
   <div id="team" class="our-team-area area-padding">
     <div class="container">
@@ -4249,11 +4253,12 @@ span.email-notes {
         <div class="flex-member">
           <div class="col-md-3 col-sm-3 col-xs-12">
             <div class="single-team-member">
-              <div class="team-img">
+              <div class="hovereff">
+              <div class="team-img popup1">
                 <a>
                   <img src="img/portfolio/1.jpg" alt="">
                 </a>
-                <div class="team-social-icon text-center" style="margin-top: -13%;">
+                <div class="team-social-icon text-center" style="margin-top: -13%;" id="popup1">
                   <ul>
                     <li>
                       <a href="#">
@@ -4291,20 +4296,41 @@ span.email-notes {
                   </ul>
                 </div>
               </div>
+            </div>
               <div class="team-content text-center">
                 <h4>product 1</h4>
-                <p><a href="productdetails.html">Show Details</a></p>
+                <p>
+                  <div>
+                  <a href="products.html">View All</a>
+                </div>
+                <span style="margin-left: 0px;">
+                  <button onclick="showShare('popup1')" style="border: 1px;background-color: white;">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="800px" width="800px" version="1.1" id="Capa_1" viewBox="0 0 332.904 332.904" xml:space="preserve" style="
+                    background: white;
+                    padding-top: 6px;
+                    height: 25px;
+    width: 19px;
+    padding-bottom: -5px;
+    margin-top: 10px;
+">
+<g>
+	<path style="fill:#010002;" d="M248.001,220.774c-17.483,0-33.116,8.055-43.403,20.639l-75.761-44.232   c7.572-9.559,12.131-21.606,12.131-34.715c0-12.154-3.926-23.378-10.526-32.573l72.265-40.945   c10.197,14.01,26.678,23.169,45.295,23.169c30.908,0,56.059-25.144,56.059-56.059S278.909,0,248.001,0   s-56.059,25.144-56.059,56.059c0,8.025,1.724,15.651,4.779,22.561l-74.449,42.186c-9.929-8.915-23.002-14.392-37.371-14.392   c-30.908,0-56.059,25.144-56.059,56.059c0,30.908,25.144,56.059,56.059,56.059c13.372,0,25.646-4.72,35.294-12.56l77.892,45.474   c-3.896,7.632-6.146,16.254-6.146,25.401c0,30.908,25.15,56.059,56.059,56.059s56.059-25.15,56.059-56.059   S278.909,220.774,248.001,220.774z"></path>
+</g>
+</svg>
+                  </button>
+                </span></p>
               </div>
             </div>
           </div>
           <!-- End column -->
           <div class="col-md-3 col-sm-3 col-xs-12">
             <div class="single-team-member">
-              <div class="team-img">
+              <div class="hovereff">
+              <div class="team-img popup2">
                 <a>
                   <img src="img/portfolio/2.jpg" alt="">
                 </a>
-                <div class="team-social-icon text-center" style="margin-top: -13%;">
+                <div class="team-social-icon text-center" style="margin-top: -13%;" id="popup2">
                   <ul>
                     <li>
                       <a href="#">
@@ -4342,20 +4368,41 @@ span.email-notes {
                   </ul>
                 </div>
               </div>
+            </div>
               <div class="team-content text-center">
                 <h4>product 2</h4>
-                <p><a href="productdetails.html">Show Details</a></p>
+                <p>
+                  <div>
+                  <a href="products.html">View All</a>
+                </div>
+                <span style="margin-left: 0px;">
+                  <button onclick="showShare('popup2')" style="border: 1px;background-color: white;">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="800px" width="800px" version="1.1" id="Capa_1" viewBox="0 0 332.904 332.904" xml:space="preserve" style="
+                    background: white;
+                    padding-top: 6px;
+                    height: 25px;
+    width: 19px;
+    padding-bottom: -5px;
+    margin-top: 10px;
+">
+<g>
+	<path style="fill:#010002;" d="M248.001,220.774c-17.483,0-33.116,8.055-43.403,20.639l-75.761-44.232   c7.572-9.559,12.131-21.606,12.131-34.715c0-12.154-3.926-23.378-10.526-32.573l72.265-40.945   c10.197,14.01,26.678,23.169,45.295,23.169c30.908,0,56.059-25.144,56.059-56.059S278.909,0,248.001,0   s-56.059,25.144-56.059,56.059c0,8.025,1.724,15.651,4.779,22.561l-74.449,42.186c-9.929-8.915-23.002-14.392-37.371-14.392   c-30.908,0-56.059,25.144-56.059,56.059c0,30.908,25.144,56.059,56.059,56.059c13.372,0,25.646-4.72,35.294-12.56l77.892,45.474   c-3.896,7.632-6.146,16.254-6.146,25.401c0,30.908,25.15,56.059,56.059,56.059s56.059-25.15,56.059-56.059   S278.909,220.774,248.001,220.774z"></path>
+</g>
+</svg>
+                  </button>
+                </span></p>
               </div>
             </div>
           </div>
           <!-- End column -->
           <div class="col-md-3 col-sm-3 col-xs-12">
             <div class="single-team-member">
-              <div class="team-img">
+              <div class="hovereff">
+              <div class="team-img popup3">
                 <a>
                   <img src="img/portfolio/3.jpg" alt="">
                 </a>
-                <div class="team-social-icon text-center" style="margin-top: -13%;">
+                <div class="team-social-icon text-center" style="margin-top: -13%;" id="popup3">
                   <ul>
                     <li>
                       <a href="#">
@@ -4393,20 +4440,41 @@ span.email-notes {
                   </ul>
                 </div>
               </div>
+            </div>
               <div class="team-content text-center">
                 <h4>product 3</h4>
-                <p><a href="productdetails.html">Show Details</a></p>
+                <p>
+                  <div>
+                  <a href="products.html">View All</a>
+                </div>
+                <span style="margin-left: 0px;">
+                  <button onclick="showShare('popup3')" style="border: 1px;background-color: white;">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="800px" width="800px" version="1.1" id="Capa_1" viewBox="0 0 332.904 332.904" xml:space="preserve" style="
+                    background: white;
+                    padding-top: 6px;
+                    height: 25px;
+    width: 19px;
+    padding-bottom: -5px;
+    margin-top: 10px;
+">
+<g>
+	<path style="fill:#010002;" d="M248.001,220.774c-17.483,0-33.116,8.055-43.403,20.639l-75.761-44.232   c7.572-9.559,12.131-21.606,12.131-34.715c0-12.154-3.926-23.378-10.526-32.573l72.265-40.945   c10.197,14.01,26.678,23.169,45.295,23.169c30.908,0,56.059-25.144,56.059-56.059S278.909,0,248.001,0   s-56.059,25.144-56.059,56.059c0,8.025,1.724,15.651,4.779,22.561l-74.449,42.186c-9.929-8.915-23.002-14.392-37.371-14.392   c-30.908,0-56.059,25.144-56.059,56.059c0,30.908,25.144,56.059,56.059,56.059c13.372,0,25.646-4.72,35.294-12.56l77.892,45.474   c-3.896,7.632-6.146,16.254-6.146,25.401c0,30.908,25.15,56.059,56.059,56.059s56.059-25.15,56.059-56.059   S278.909,220.774,248.001,220.774z"></path>
+</g>
+</svg>
+                  </button>
+                </span></p>
               </div>
             </div>
           </div>
           <!-- End column -->
           <div class="col-md-3 col-sm-3 col-xs-12">
             <div class="single-team-member">
-              <div class="team-img">
+              <div class="hovereff">
+              <div class="team-img popup4">
                 <a>
                   <img src="img/portfolio/4.jpg" alt="">
                 </a>
-                <div class="team-social-icon text-center" style="margin-top: -13%;">
+                <div class="team-social-icon text-center" style="margin-top: -13%;" id="popup4">
                   <ul>
                     <li>
                       <a href="#">
@@ -4444,20 +4512,41 @@ span.email-notes {
                   </ul>
                 </div>
               </div>
+            </div>
               <div class="team-content text-center">
                 <h4>product 4</h4>
-                <p><a href="productdetails.html">Show Details</a></p>
+                <p>
+                  <div>
+                  <a href="products.html">View All</a>
+                </div>
+                <span style="margin-left: 0px;">
+                  <button onclick="showShare('popup4')" style="border: 1px;background-color: white;">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="800px" width="800px" version="1.1" id="Capa_1" viewBox="0 0 332.904 332.904" xml:space="preserve" style="
+                    background: white;
+                    padding-top: 6px;
+                    height: 25px;
+    width: 19px;
+    padding-bottom: -5px;
+    margin-top: 10px;
+">
+<g>
+	<path style="fill:#010002;" d="M248.001,220.774c-17.483,0-33.116,8.055-43.403,20.639l-75.761-44.232   c7.572-9.559,12.131-21.606,12.131-34.715c0-12.154-3.926-23.378-10.526-32.573l72.265-40.945   c10.197,14.01,26.678,23.169,45.295,23.169c30.908,0,56.059-25.144,56.059-56.059S278.909,0,248.001,0   s-56.059,25.144-56.059,56.059c0,8.025,1.724,15.651,4.779,22.561l-74.449,42.186c-9.929-8.915-23.002-14.392-37.371-14.392   c-30.908,0-56.059,25.144-56.059,56.059c0,30.908,25.144,56.059,56.059,56.059c13.372,0,25.646-4.72,35.294-12.56l77.892,45.474   c-3.896,7.632-6.146,16.254-6.146,25.401c0,30.908,25.15,56.059,56.059,56.059s56.059-25.15,56.059-56.059   S278.909,220.774,248.001,220.774z"></path>
+</g>
+</svg>
+                  </button>
+                </span></p>
               </div>
             </div>
           </div>
           <!-- End column -->
           <div class="col-md-3 col-sm-3 col-xs-12">
             <div class="single-team-member">
-              <div class="team-img">
+              <div class="hovereff">
+              <div class="team-img popup5">
                 <a>
                   <img src="img/portfolio/4.jpg" alt="">
                 </a>
-                <div class="team-social-icon text-center" style="margin-top: -13%;">
+                <div class="team-social-icon text-center" style="margin-top: -13%;" id="popup5">
                   <ul>
                     <li>
                       <a href="#">
@@ -4495,20 +4584,41 @@ span.email-notes {
                   </ul>
                 </div>
               </div>
+            </div>
               <div class="team-content text-center">
-                <h4>product 1</h4>
-                <p><a href="productdetails.html">Show Details</a></p>
+                <h4>product 5</h4>
+                <p>
+                  <div>
+                  <a href="products.html">View All</a>
+                </div>
+                <span style="margin-left: 0px;">
+                  <button onclick="showShare('popup5')" style="border: 1px;background-color: white;">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="800px" width="800px" version="1.1" id="Capa_1" viewBox="0 0 332.904 332.904" xml:space="preserve" style="
+                    background: white;
+                    padding-top: 6px;
+                    height: 25px;
+    width: 19px;
+    padding-bottom: -5px;
+    margin-top: 10px;
+">
+<g>
+	<path style="fill:#010002;" d="M248.001,220.774c-17.483,0-33.116,8.055-43.403,20.639l-75.761-44.232   c7.572-9.559,12.131-21.606,12.131-34.715c0-12.154-3.926-23.378-10.526-32.573l72.265-40.945   c10.197,14.01,26.678,23.169,45.295,23.169c30.908,0,56.059-25.144,56.059-56.059S278.909,0,248.001,0   s-56.059,25.144-56.059,56.059c0,8.025,1.724,15.651,4.779,22.561l-74.449,42.186c-9.929-8.915-23.002-14.392-37.371-14.392   c-30.908,0-56.059,25.144-56.059,56.059c0,30.908,25.144,56.059,56.059,56.059c13.372,0,25.646-4.72,35.294-12.56l77.892,45.474   c-3.896,7.632-6.146,16.254-6.146,25.401c0,30.908,25.15,56.059,56.059,56.059s56.059-25.15,56.059-56.059   S278.909,220.774,248.001,220.774z"></path>
+</g>
+</svg>
+                  </button>
+                </span></p>
               </div>
             </div>
           </div>
           <!-- End column -->
           <div class="col-md-3 col-sm-3 col-xs-12">
             <div class="single-team-member">
-              <div class="team-img">
+              <div class="hovereff">
+              <div class="team-img popup6">
                 <a>
                   <img src="img/portfolio/3.jpg" alt="">
                 </a>
-                <div class="team-social-icon text-center" style="margin-top: -13%;">
+                <div class="team-social-icon text-center" style="margin-top: -13%;" id="popup6">
                   <ul>
                     <li>
                       <a href="#">
@@ -4546,20 +4656,41 @@ span.email-notes {
                   </ul>
                 </div>
               </div>
+            </div>
               <div class="team-content text-center">
-                <h4>product 1</h4>
-                <p><a href="productdetails.html">Show Details</a></p>
+                <h4>product 6</h4>
+                <p>
+                  <div>
+                  <a href="products.html">View All</a>
+                </div>
+                <span style="margin-left: 0px;">
+                  <button onclick="showShare('popup6')" style="border: 1px;background-color: white;">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="800px" width="800px" version="1.1" id="Capa_1" viewBox="0 0 332.904 332.904" xml:space="preserve" style="
+                    background: white;
+                    padding-top: 6px;
+                    height: 25px;
+    width: 19px;
+    padding-bottom: -5px;
+    margin-top: 10px;
+">
+<g>
+	<path style="fill:#010002;" d="M248.001,220.774c-17.483,0-33.116,8.055-43.403,20.639l-75.761-44.232   c7.572-9.559,12.131-21.606,12.131-34.715c0-12.154-3.926-23.378-10.526-32.573l72.265-40.945   c10.197,14.01,26.678,23.169,45.295,23.169c30.908,0,56.059-25.144,56.059-56.059S278.909,0,248.001,0   s-56.059,25.144-56.059,56.059c0,8.025,1.724,15.651,4.779,22.561l-74.449,42.186c-9.929-8.915-23.002-14.392-37.371-14.392   c-30.908,0-56.059,25.144-56.059,56.059c0,30.908,25.144,56.059,56.059,56.059c13.372,0,25.646-4.72,35.294-12.56l77.892,45.474   c-3.896,7.632-6.146,16.254-6.146,25.401c0,30.908,25.15,56.059,56.059,56.059s56.059-25.15,56.059-56.059   S278.909,220.774,248.001,220.774z"></path>
+</g>
+</svg>
+                  </button>
+                </span></p>
               </div>
             </div>
           </div>
           <!-- End column -->
           <div class="col-md-3 col-sm-3 col-xs-12">
             <div class="single-team-member">
-              <div class="team-img">
+              <div class="hovereff">
+              <div class="team-img popup7">
                 <a>
                   <img src="img/portfolio/2.jpg" alt="">
                 </a>
-                <div class="team-social-icon text-center" style="margin-top: -13%;">
+                <div class="team-social-icon text-center" style="margin-top: -13%;" id="popup7">
                   <ul>
                     <li>
                       <a href="#">
@@ -4597,20 +4728,41 @@ span.email-notes {
                   </ul>
                 </div>
               </div>
+            </div>
               <div class="team-content text-center">
-                <h4>product 1</h4>
-                <p><a href="productdetails.html">Show Details</a></p>
+                <h4>product 7</h4>
+                <p>
+                  <div>
+                  <a href="products.html">View All</a>
+                </div>
+                <span style="margin-left: 0px;">
+                  <button onclick="showShare('popup7')" style="border: 1px;background-color: white;">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="800px" width="800px" version="1.1" id="Capa_1" viewBox="0 0 332.904 332.904" xml:space="preserve" style="
+                    background: white;
+                    padding-top: 6px;
+                    height: 25px;
+    width: 19px;
+    padding-bottom: -5px;
+    margin-top: 10px;
+">
+<g>
+	<path style="fill:#010002;" d="M248.001,220.774c-17.483,0-33.116,8.055-43.403,20.639l-75.761-44.232   c7.572-9.559,12.131-21.606,12.131-34.715c0-12.154-3.926-23.378-10.526-32.573l72.265-40.945   c10.197,14.01,26.678,23.169,45.295,23.169c30.908,0,56.059-25.144,56.059-56.059S278.909,0,248.001,0   s-56.059,25.144-56.059,56.059c0,8.025,1.724,15.651,4.779,22.561l-74.449,42.186c-9.929-8.915-23.002-14.392-37.371-14.392   c-30.908,0-56.059,25.144-56.059,56.059c0,30.908,25.144,56.059,56.059,56.059c13.372,0,25.646-4.72,35.294-12.56l77.892,45.474   c-3.896,7.632-6.146,16.254-6.146,25.401c0,30.908,25.15,56.059,56.059,56.059s56.059-25.15,56.059-56.059   S278.909,220.774,248.001,220.774z"></path>
+</g>
+</svg>
+                  </button>
+                </span></p>
               </div>
             </div>
           </div>
           <!-- End column -->
           <div class="col-md-3 col-sm-3 col-xs-12">
             <div class="single-team-member">
-              <div class="team-img">
+              <div class="hovereff">
+              <div class="team-img popup8">
                 <a>
                   <img src="img/portfolio/1.jpg" alt="">
                 </a>
-                <div class="team-social-icon text-center" style="margin-top: -13%;">
+                <div class="team-social-icon text-center" style="margin-top: -13%;" id="popup8">
                   <ul>
                     <li>
                       <a href="#">
@@ -4648,9 +4800,29 @@ span.email-notes {
                   </ul>
                 </div>
               </div>
+            </div>
               <div class="team-content text-center">
-                <h4>product 1</h4>
-                <p><a href="productdetails.html">Show Details</a></p>
+                <h4>product 8</h4>
+                <p>
+                  <div>
+                  <a href="products.html">View All</a>
+                </div>
+                <span style="margin-left: 0px;">
+                  <button onclick="showShare('popup8')" style="border: 1px;background-color: white;">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="800px" width="800px" version="1.1" id="Capa_1" viewBox="0 0 332.904 332.904" xml:space="preserve" style="
+                    background: white;
+                    padding-top: 6px;
+                    height: 25px;
+    width: 19px;
+    padding-bottom: -5px;
+    margin-top: 10px;
+">
+<g>
+	<path style="fill:#010002;" d="M248.001,220.774c-17.483,0-33.116,8.055-43.403,20.639l-75.761-44.232   c7.572-9.559,12.131-21.606,12.131-34.715c0-12.154-3.926-23.378-10.526-32.573l72.265-40.945   c10.197,14.01,26.678,23.169,45.295,23.169c30.908,0,56.059-25.144,56.059-56.059S278.909,0,248.001,0   s-56.059,25.144-56.059,56.059c0,8.025,1.724,15.651,4.779,22.561l-74.449,42.186c-9.929-8.915-23.002-14.392-37.371-14.392   c-30.908,0-56.059,25.144-56.059,56.059c0,30.908,25.144,56.059,56.059,56.059c13.372,0,25.646-4.72,35.294-12.56l77.892,45.474   c-3.896,7.632-6.146,16.254-6.146,25.401c0,30.908,25.15,56.059,56.059,56.059s56.059-25.15,56.059-56.059   S278.909,220.774,248.001,220.774z"></path>
+</g>
+</svg>
+                  </button>
+                </span></p>
               </div>
             </div>
           </div>
@@ -4820,6 +4992,57 @@ span.email-notes {
   
 
     <script src="js/main.js"></script>
+    <script>
+      var toggle = 0;
+      function showShare(ids){
+        console.log('share')
+  
+        // Create a style element
+  var styleElement = document.createElement('style');
+  
+  // Define the CSS rules
+  if(toggle==0){
+  var cssCode = `
+  .${ids}>a::after {
+    opacity: 1;
+  }
+  #${ids} {
+    top: 45%;
+    opacity: 1;
+  }
+  .hovereff:hover #${ids} {
+    top: 45%;
+    opacity: 1;
+  }
+  `;
+  styleElement.innerHTML = cssCode;
+  toggle=1;
+  }
+  else{
+    var cssCode = `
+  .${ids}>a::after {
+    opacity: 0;
+  }
+  #${ids} {
+    top: 45%;
+    opacity: 0;
+  }
+  .hovereff:hover #${ids} {
+    top: 45%;
+    opacity: 1;
+  }
+  `;
+  styleElement.innerHTML = cssCode;
+    toggle=0;
+  }
+  
+  // Set the style element's innerHTML to the CSS rules
+  
+  
+  // Append the style element to the head of the document
+  document.head.appendChild(styleElement);
+      }
+    </script>
 </body>
 
 </html>
