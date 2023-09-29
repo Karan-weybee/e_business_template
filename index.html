@@ -2333,7 +2333,7 @@ div#preloader {
   opacity: 1;
 }
 
-.hovereff:hover .team-social-icon {
+.hovereff:hover #popup {
   top: 45%;
   opacity: 1;
 }
@@ -2566,7 +2566,7 @@ div#preloader {
   position: absolute;
   top: 0;
   width: 100%;
-  opacity: 0;
+  opacity: var(--afterback,0);
   transition: 0.4s;
 }
 
@@ -4574,11 +4574,11 @@ span.email-notes {
           <div class="col-md-3 col-sm-3 col-xs-12">
             <div class="single-team-member">
               <div class="hovereff">
-              <div class="team-img">
+              <div class="team-img popup">
                 <a>
                   <img src="img/portfolio/1.jpg" alt="">
                 </a>
-                <div class="team-social-icon text-center" style="margin-top: -13%;">
+                <div class="team-social-icon text-center" style="margin-top: -13%;" id="popup">
                   <ul>
                     <li>
                       <a href="#">
@@ -4621,7 +4621,9 @@ span.email-notes {
                 <h4>product 1</h4>
                 <p><a href="products.html">View All</a>
                 
-                <span style="margin-left: 15px;"><button onclick="showShare()" style="border: 1px;"> A</button></span></p>
+                <span style="margin-left: 15px;">
+                  <button onclick="showShare()" style="border: 1px;"> A</button>
+                </span></p>
               </div>
             </div>
           </div>
@@ -5682,17 +5684,46 @@ http://www.gnu.org/licenses/gpl.html
     });
   </script>
   <script>
+    var toggle = 0;
     function showShare(){
-    var teamImgAnchor = document.querySelector('.team-img > a').querySelector('::after');
-console.log("share");
-    if (teamImgAnchor) {
-        //teamImgAnchorafter.style.position = 'relative'; // Ensure the anchor's position is set to relative
-        teamImgAnchor.style.opacity = '1'; // Set opacity to 1 to make the element visible
+      console.log('share')
 
-       
+      // Create a style element
+var styleElement = document.createElement('style');
 
-    }
+// Define the CSS rules
+if(toggle==0){
+var cssCode = `
+.popup>a::after {
+  opacity: 1;
+}
+#popup {
+  top: 45%;
+  opacity: 1;
+}
+`;
+styleElement.innerHTML = cssCode;
+toggle=1;
+}
+else{
+  var cssCode = `
+.popup>a::after {
+  opacity: 0;
+}
+#popup {
+  top: 45%;
+  opacity: 0;
+}
+`;
+styleElement.innerHTML = cssCode;
+  toggle=0;
+}
 
+// Set the style element's innerHTML to the CSS rules
+
+
+// Append the style element to the head of the document
+document.head.appendChild(styleElement);
     }
   </script>
 </body>
